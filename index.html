@@ -3,57 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortran Pie</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Fortran Pie - Authentic Italian Pizza Experience</title>
+    <meta name="description" content="Experience the finest Italian pizzas at Fortran Pie. Fresh ingredients, authentic recipes, and modern flavors delivered to your door.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
-    <header>
-        <h1>Fortran Pie</h1>
-        <img id="logo" src="Brown Orange Minimalist PIzza Food Logo_20241126_150808_0000.png" alt="Fortran Pie Logo">
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Brown Orange Minimalist PIzza Food Logo_20241126_150808_0000.png" alt="Fortran Pie Logo" class="logo-img">
+                <span class="logo-text">Fortran Pie</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-order-btn">Order Now</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Cart Icon -->
+    <div class="floating-cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Authentic Italian Pizza
+                <span class="hero-highlight">Crafted with Passion</span>
+            </h1>
+            <p class="hero-subtitle">Slicing Through Hunger, Byte by Byte - Where Technology Meets Tradition</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Order Now</button>
+                <button class="btn btn-secondary">View Menu</button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
     <main>
-        <section id="home">
-            <h2>Slicing Through Hunger, Byte by Byte</h2>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About Fortran Pie</h2>
+                        <p class="section-subtitle">Where Code Meets Culinary Excellence</p>
+                        <p>At Fortran Pie, we combine the precision of programming with the artistry of authentic Italian pizza making. Our unique name reflects our commitment to both innovation and tradition - creating perfectly calculated flavors that compile into unforgettable experiences.</p>
+                        <p>Every pizza is crafted with premium ingredients, hand-tossed dough, and recipes passed down through generations. We're not just serving pizza; we're delivering a slice of Italy with a modern twist.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Happy Customers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Pizza Varieties</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5★</span>
+                                <span class="stat-label">Average Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="Brown Orange Minimalist PIzza Food Logo_20241126_150808_0000.png" alt="Fortran Pie Story">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr id="line">
+        <!-- Featured Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Our Signature Pizzas</h2>
+                <p class="section-subtitle">Handcrafted with the finest ingredients</p>
+                
+                <div class="menu-grid">
+                    <div class="pizza-card" data-pizza="pepperoni">
+                        <div class="pizza-image">
+                            <img src="peperoni.jpeg" alt="Pepperoni Pizza">
+                            <div class="pizza-overlay">
+                                <button class="quick-order-btn">Quick Order</button>
+                            </div>
+                        </div>
+                        <div class="pizza-content">
+                            <h3>Classic Pepperoni</h3>
+                            <p>Savor the flavor of Italy! Our signature pepperoni pizza combines crispy pepperoni, velvety mozzarella, and a drizzle of extra-virgin olive oil on our hand-tossed dough.</p>
+                            <div class="pizza-price">$18.99</div>
+                            <button class="add-to-cart-btn" data-name="Classic Pepperoni" data-price="18.99">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
 
-  <section id="menu">
-  <h1>Menu</h1>
-  <div class="menu-grid">
- <div class="feature-card">
- <h2>Pepperoni Pizza</h2>
- <img class="photo" src="peperoni.jpeg" alt="Pepperoni Pizza">
- <p>Savor the flavor of Italy! Fortran Pie's Pepperoni Pizza combines crispy pepperoni, velvety mozzarella, and a drizzle of extra-virgin olive oil.</p>
-<a class="order" href="https://www.pizzahut.com.ph/order/deal?gad_source=1&gclid=EAIaIQobChMIyLOp6dP5iQMVB14PAh2uPjHGEAAYASAAEgIS2PD_BwE"><button class="order-btn">Order</button></a>
-  </div> <br>
-   <div class="feature-card">
-   <h2>Cheese Pizza</h2>
-   <img class="photo" src="cheese pizza.jpeg" alt="cheese pizza">
-   <p>Fortran Pie's Cheese Please! A timeless favorite with melted mozzarella, savory parmesan and a hint of Italian love.</p>
- <a class="order" href="https://www.pizzahut.com.ph/order/deal?gad_source=1&gclid=EAIaIQobChMIyLOp6dP5iQMVB14PAh2uPjHGEAAYASAAEgIS2PD_BwE"><button class="order-btn">Order</button></a>
-  </div> <br>
-  <div class="feature-card">
- <h2>Ham and cheese</h2>
-  <img class="photo" src="Ham and cheese pizza.jpeg" alt="Ham and cheese pizza"> 
-  <p>Perfect for cheese lovers, our Pizza Ham and Cheese Fortran Pie features a creamy, melty cheese blend and tender slices of savory ham, all enveloped in a perfectly crisp and flaky pie crust. </p>
-  <a class="order" href="https://www.pizzahut.com.ph/order/deal?gad_source=1&gclid=EAIaIQobChMIyLOp6dP5iQMVB14PAh2uPjHGEAAYASAAEgIS2PD_BwE"><button class="order-btn">Order</button></a>
-                                </div>
+                    <div class="pizza-card" data-pizza="cheese">
+                        <div class="pizza-image">
+                            <img src="cheese pizza.jpeg" alt="Cheese Pizza">
+                            <div class="pizza-overlay">
+                                <button class="quick-order-btn">Quick Order</button>
+                            </div>
+                        </div>
+                        <div class="pizza-content">
+                            <h3>Four Cheese Delight</h3>
+                            <p>A timeless favorite featuring our signature blend of mozzarella, parmesan, ricotta, and gorgonzola with a hint of Italian herbs and love.</p>
+                            <div class="pizza-price">$16.99</div>
+                            <button class="add-to-cart-btn" data-name="Four Cheese Delight" data-price="16.99">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="pizza-card" data-pizza="ham-cheese">
+                        <div class="pizza-image">
+                            <img src="Ham and cheese pizza.jpeg" alt="Ham and Cheese Pizza">
+                            <div class="pizza-overlay">
+                                <button class="quick-order-btn">Quick Order</button>
+                            </div>
+                        </div>
+                        <div class="pizza-content">
+                            <h3>Ham & Cheese Supreme</h3>
+                            <p>Perfect for meat lovers! Features tender slices of savory ham, our signature cheese blend, and fresh herbs on a perfectly crisp and flaky crust.</p>
+                            <div class="pizza-price">$19.99</div>
+                            <button class="add-to-cart-btn" data-name="Ham & Cheese Supreme" data-price="19.99">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-cta">
+                    <p>Explore our full menu with over 50 delicious varieties</p>
+                    <button class="btn btn-primary">View Full Menu</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real reviews from pizza lovers</p>
+                
+                <div class="testimonials-carousel">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Absolutely amazing! The pepperoni pizza was perfectly crispy and the flavors were incredible. Fast delivery too!"</p>
+                            <div class="testimonial-author">
+                                <strong>Maria Rodriguez</strong>
+                                <span>Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Best pizza in town! The four cheese is my favorite. Quality ingredients and excellent service every time."</p>
+                            <div class="testimonial-author">
+                                <strong>John Smith</strong>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Fortran Pie has become our family's go-to for pizza night. The ham and cheese supreme is phenomenal!"</p>
+                            <div class="testimonial-author">
+                                <strong>Sarah Johnson</strong>
+                                <span>Family Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Find Us & Get In Touch</h2>
+                <p class="section-subtitle">We deliver fresh, hot pizza to your doorstep</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Delivery Areas</h4>
+                                <p>We deliver within 10km radius of our kitchen. Free delivery on orders over $25.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Order Hotline</h4>
+                                <p>(555) 123-PIZZA<br>Available 11 AM - 11 PM daily</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Operating Hours</h4>
+                                <p>Mon-Thu: 11 AM - 10 PM<br>Fri-Sat: 11 AM - 11 PM<br>Sun: 12 PM - 9 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>hello@fortranpie.com<br>We'll respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send us a message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-  <footer>
-    <h6>Follow Fortran's Pie on :</h6>
-    <a href="https://www.facebook.com/profile.php?id=61566658654272&mibextid=ZbWKwL" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a>
-    <a href="https://www.tiktok.com/@tsmhabib03?_t=8riCtNyGQEc&_r=1"><i class="fab fa-tiktok"></i> TikTok</a>
-    <p>&copy; 2024 All Rights Reserved</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Brown Orange Minimalist PIzza Food Logo_20241126_150808_0000.png" alt="Fortran Pie Logo">
+                        <span>Fortran Pie</span>
+                    </div>
+                    <p>Authentic Italian pizza crafted with passion and precision. Where technology meets tradition.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61566658654272&mibextid=ZbWKwL" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@tsmhabib03?_t=8riCtNyGQEc&_r=1" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Nutritional Info</a></li>
+                        <li><a href="#">Allergen Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Delivery Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get special offers and updates!</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fortran Pie. All Rights Reserved. | Made with ❤️ for pizza lovers</p>
+            </div>
+        </div>
+    </footer>
 
-    <script src="main.js">main.js</script>
+    <script src="main.js"></script>
 </body>
 </html>
